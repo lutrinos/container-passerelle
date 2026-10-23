@@ -1,4 +1,4 @@
-module container-health
+module container-passerelle
 
 go 1.26.9
 

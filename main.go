@@ -23,7 +23,7 @@ func read() {
 	body, read_err := os.ReadFile("config.yaml")
 
 	if read_err != nil {
-		log.Fatal("unable to read config file")
+		log.Fatal("unable to read config file", read_err)
 	}
 
 	err := yaml.Unmarshal([]byte(body), &redirections)
