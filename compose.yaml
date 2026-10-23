@@ -1,0 +1,8 @@
+# This is an example compose file
+
+services:
+  passerelle:
+    image: ghcr.io/lutrinos/container-passerelle:latest
+    volumes:
+      - ./config.yaml:/config.yaml:ro
+    restart: unless-stopped

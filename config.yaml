@@ -1,4 +1,4 @@
-- id: google
-  url: https://www.google.com
-- id: wikipedia
-  url: https://www.wikipedia.org
+- id: service1
+  url: http://service_1:8080/ping
+- id: service2
+  url: http://service_2:3000/healthcheck

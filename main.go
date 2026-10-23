@@ -20,7 +20,7 @@ var redirections []Redirection
 var client = &http.Client{Timeout: 5 * time.Second}
 
 func read() {
-	body, read_err := os.ReadFile("config.yaml")
+	body, read_err := os.ReadFile("/config.yaml")
 
 	if read_err != nil {
 		log.Fatal("unable to read config file", read_err)
